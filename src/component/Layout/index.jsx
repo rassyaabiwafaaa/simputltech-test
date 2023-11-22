@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../Navbar";
 
 export default function index({ children }) {
   return (
@@ -10,7 +11,7 @@ export default function index({ children }) {
         {/* right bar */}
         <div className="w-full bg-[#333333]">
           {/* navbar */}
-          <div className="w-full h-[58px] bg-[#4f4f4f]"></div>
+          <Navbar />
           {/* content */}
           {children}
         </div>
