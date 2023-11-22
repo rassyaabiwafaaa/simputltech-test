@@ -1,12 +1,11 @@
-import { useState } from "react";
-import "./App.css";
+import Layout from "./component/Layout";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1 className="text-3xl text-red-500 font-bold underline">Hello world!</h1>
+      <Layout>
+        <h1>Hello World</h1>
+      </Layout>
     </>
   );
 }
