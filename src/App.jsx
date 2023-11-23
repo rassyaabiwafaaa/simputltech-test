@@ -1,10 +1,12 @@
 import Layout from "./component/Layout";
+import QuickButton from "./component/QuickButton";
 
 function App() {
   return (
     <>
       <Layout>
-        <h1>Hello World</h1>
+        {/* Quick button */}
+        <QuickButton />
       </Layout>
     </>
   );
