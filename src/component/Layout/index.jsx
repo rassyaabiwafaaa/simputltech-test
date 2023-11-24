@@ -13,7 +13,7 @@ export default function index({ children }) {
           {/* navbar */}
           <Navbar />
           {/* content */}
-          <div className="h-[calc(100%-58px)] flex justify-end items-end pr-[34px] pb-[27px] ">{children}</div>
+          <div className="h-[calc(100%-58px)] flex flex-col justify-end items-end pr-[34px] pb-[27px] ">{children}</div>
         </div>
       </div>
     </>
