@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./style.css";
 import { ChatIcon, QuickButton, TaskIcon } from "../../assets/icons";
 
-export default function index() {
+export default function index({setShowContent}) {
   const [showButtons, setShowButtons] = useState(false);
   const [selectedButton, setSelectedButton] = useState(null);
-
-  console.log(selectedButton);
 
   const toggleButtons = () => {
     setShowButtons(!showButtons);
@@ -35,10 +33,10 @@ export default function index() {
       {showButtons && (
         <div className="flex flex-row gap-[26px] absolute -left-[180px] animate-slide-in">
           <div>
-            <img src={TaskIcon} alt="task button" className="w-[60px] h-[60px] cursor-pointer" onClick={() => handleButtonClick("Task")} />
+            <img src={TaskIcon} alt="task button" className="w-[60px] h-[60px] cursor-pointer" onClick={() => setShowContent("Task")} />
           </div>
           <div>
-            <img src={ChatIcon} alt="chat button" className="w-[60px] h-[60px] cursor-pointer" onClick={() => handleButtonClick("Chat")} />
+            <img src={ChatIcon} alt="chat button" className="w-[60px] h-[60px] cursor-pointer" onClick={() => setShowContent("Chat")} />
           </div>
           {/* Add more buttons as needed */}
         </div>

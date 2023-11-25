@@ -6,7 +6,7 @@ export default function ItemChatPersonal() {
       {/* Item Chat Personal */}
       <div className="mt-[26px] mb-[28px] flex">
         {/* Profle grup */}
-        <div className="flex relative w-[45px] justify-center">
+        <div className="flex relative justify-center">
           <img
             src={IconChatPersonal}
             alt="asd"

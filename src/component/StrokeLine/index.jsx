@@ -2,6 +2,6 @@
 
 export default function StrokeLine() {
   return (
-    <div className="h-[1px] bg-[#828282]" />
+    <div className="h-[2px] bg-[#828282]" />
   )
 }
